@@ -50,12 +50,10 @@ Citations
 1. https://www.intechopen.com/chapters/70858
 """
 import os
-import numpy as np
 import mahotas as mh
-import matplotlib
-import matplotlib.pylab as plt
+import numpy as np
 
-from page import PAGE
+from page_cpu import PAGE_CPU
 from handles import Handles
 
 #used to time blocks of code
