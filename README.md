@@ -1,4 +1,4 @@
-Image Feautre Detection Using the Phase-Stretch Adaptive Gradient-field Extractor
+PAGE: Phase-Stretch Adaptive Gradient-field Extractor
 ---------------------------------------------------------------------------------
 Implementation of Phase-stretch Adaptive Gradient-field Extractor (PAGE) in Python
 @contributors: Madhuri Suthar, Callen MacPhee, Yiming Zhou, Dale Capewell, Jalali Lab, Department of Electrical and
