@@ -54,7 +54,7 @@ from timeit import default_timer as timer
 import mahotas as mh
 import numpy as np
 
-from page_cpu import PAGE_CPU
+from page_cpu import PAGE_CPU, visualize_PAGE
 from handles import Handles
 
 #used to time blocks of code 
