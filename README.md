@@ -7,6 +7,7 @@ Computer Engineering,  UCLA
 Please find more information within the corresponding manuscript http://arxiv.org/abs/2202.03570 [1] and the Wiki page "INSERT WIKI LINK HERE". 
 
 ![sunflower](https://user-images.githubusercontent.com/16159544/153650725-6e472072-4e9a-44cf-a599-02f04c0c8f31.jpeg)
+<font size="4"> Phase-Stretch Adaptive Gradient-Field Extractor (PAGE) performed on an X-Ray of a Sunflower. The colors represent the orientation (angle) of the edge.</font> 
 
 PAGE or Phase-stretch Adaptive Gradient-field Extractor is a physics-inspired algorithm for
 detecting edges and their orientations in digital images at various scales. The algorithm is based on the diffraction
@@ -35,6 +36,7 @@ dimensional input, the output will be of size N x M x D, where D is the number o
 repeated for each color channel of a color image.
 
 ![rose](https://user-images.githubusercontent.com/16159544/153651040-d32ac65c-8fc8-444f-a04c-3c641bf64bfd.gif)
+<font size="4"> This animation demonstrates the feature channels of the PAGE algorithm. Instead of projection into the RGB space, this animation show sequentially the contents of each directional bin of the PAGE output, each of which contain edge information from the rose image.</font> 
 
 Citations
 ---------
