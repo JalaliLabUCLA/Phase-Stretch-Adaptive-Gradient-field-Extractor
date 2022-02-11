@@ -95,7 +95,7 @@ Image_grey_double = np.double(Image_orig);
 
 start = timer()
 
-[PAGE_output, PAGE_Kernel]=PAGE(Image_grey_double,handles);
+[PAGE_output, PAGE_Kernel]=PAGE_CPU(Image_grey_double,handles);
 
 print("without GPU:", timer()-start)
 
