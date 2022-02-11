@@ -1,0 +1,4 @@
+mahotas==1.4.12
+matplotlib==3.5.1
+numpy==1.22.2
+torch==1.10.2
