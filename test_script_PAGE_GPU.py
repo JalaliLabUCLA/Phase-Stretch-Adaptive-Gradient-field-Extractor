@@ -56,7 +56,7 @@ from timeit import default_timer as timer
 import torch
 
 from handles import Handles
-from page_torch import PAGE_torch, visualize_PAGE
+from page_GPU import PAGE_GPU, visualize_PAGE
 
 
 tfloat = torch.float64
@@ -108,6 +108,7 @@ else:
    PAGE_output = torch.Tensor.cpu(PAGE_output)
    print("with GPU:", timer()-start)
 
+# Visualize PAGE feature maps in RGB space
 visualize_PAGE(PAGE_output, Image_grey_double, handles)
 
 
