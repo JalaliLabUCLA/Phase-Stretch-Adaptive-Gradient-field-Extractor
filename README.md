@@ -1,16 +1,16 @@
-Introduction
-----------
+Image Feautre Detection Using the Phase-Stretch Adaptive Gradient-field Extractor
+---------------------------------------------------------------------------------
 Implementation of Phase-stretch Adaptive Gradient-Field Extractor (PAGE) in Python
 @contributors: Madhuri Suthar, Callen MacPhee, Yiming Zhou, Dale Capewell, Jalali Lab, Department of Electrical and
 Computer Engineering,  UCLA 
 
-Please find more information within the corresponding manuscript http://arxiv.org/abs/2202.03570 and the Wiki page "INSERT WIKI LINK HERE". 
+Please find more information within the corresponding manuscript http://arxiv.org/abs/2202.03570 [1] and the Wiki page "INSERT WIKI LINK HERE". 
 
 PAGE or Phase-stretch Adaptive Gradient-field Extractor is a physics-inspired algorithm for
 detecting edges and their orientations in digital images at various scales. The algorithm is based on the diffraction
-equations of optics.
+equations of optics. It builds upon the Phase Stretch Transfrom algorithm [2].
 
-In the original implementation published in [1], the first step is to apply an adaptive tone mapping operator (TMO) to
+In the original implementation published in [2], the first step is to apply an adaptive tone mapping operator (TMO) to
 enhance the local contrast. Next, we reduce the noise by applying a smoothening kernel in frequency domain
 (this operation can also be done in spatial domain). We then apply a spectral phase kernel that emulates the
 birefringence and frequency channelized diffractive propagation. The final step of PAGE is to apply thresholding and
@@ -32,32 +32,9 @@ bandwidth, sigma. It outputs a collection of angle dependent edges, each corresp
 dimensional input, the output will be of size N x M x D, where D is the number of directional bins. This could be
 repeated for each color channel of a color image.
 
-Parameters
-----------
-mu_1            # Center frequency of a normal/Gaussian distributed passband filter Phi_1
-
-mu_2            # Center frequency of log-normal distributed distributed passband filter Phi_2
-
-sigma_1         # Standard deviation sigma of normal/Gaussian distributed passband filter Phi_1
-
-sigma_2         # Standard deviation sigma of log-normal distributed passband filter Phi_2
-
-S1              # Strength (Amplitude) of Phi_1 filter
-
-S2              # Strength (Amplitude) of Phi_2 filter
-
-Direction_bins  # Number of directional bins i.e. number of PAGE filter channels
-
-sigma_LPF       # Standard deviation sigma of Gaussian distribution for smoothening kernel
-
-Thresh_min      # Lower bound of bi-level (bipolar) feature thresholding for morphological operations
-
-Thresh_max      # Upper bound of bi-level (bipolar) feature thresholding for morphological operations
-
-Morph_flag      # Flag to choose (0) analog edge output or (1) binary edge output
-
-See class Handles for parameter information.
-
 Citations
 ---------
-1. https://www.intechopen.com/chapters/70858
+1. C. MacPhee, M. Suthar, and B. Jalali, "Phase-Stretch Adaptive Gradient-Field Extractor (PAGE)" (2022)
+2. M. H. Asghari, and B. Jalali, "Edge detection in digital images using dispersive phase stretch," International Journal of Biomedical Imaging, Vol. 2015, Article ID 687819, pp. 1-6 (2015).
+3. S. Madhuri and B. Jalali, “Phase-Stretch Adaptive Gradient-Field Extractor (PAGE).” (2020).
+
