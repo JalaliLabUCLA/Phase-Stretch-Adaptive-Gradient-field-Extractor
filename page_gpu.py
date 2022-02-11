@@ -167,7 +167,7 @@ def visualize_PAGE(PAGE_output, Image_grey_double, handles):
     fig, (ax1, ax2) = plt.subplots(2, 1, gridspec_kw={'height_ratios': [4, 1]}, facecolor='black', figsize=(4, 4),
                                    dpi=200)
     ax1.imshow(Edge_normalized)
-    clist = [(0, "purple"), (45. / 180., "red"), (90. / 180., 'lime'), (135. / 180., "blue"), (180. / 180., "purple")]
+    clist = [(0, "lime"), (45. / 180., "blue"), (90. / 180., 'purple'), (135. / 180., "red"), (180. / 180., "lime")]
     cmap = matplotlib.colors.LinearSegmentedColormap.from_list("name", clist)
     colors = cmap(np.arange(cmap.N))
     ax2.imshow([colors], extent=[0, 180, 0, 1], aspect=7)
