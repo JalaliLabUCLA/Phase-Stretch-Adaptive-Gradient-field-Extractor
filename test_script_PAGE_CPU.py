@@ -50,14 +50,14 @@ Citations
 1. https://www.intechopen.com/chapters/70858
 """
 import os
+from timeit import default_timer as timer 
 import mahotas as mh
 import numpy as np
 
 from page_cpu import PAGE_CPU
 from handles import Handles
 
-#used to time blocks of code
-from timeit import default_timer as timer  
+#used to time blocks of code 
 
 input_path = os.getcwd()  # This is where the code is running.
 input_path = os.path.join(input_path, 'Input_Images/')
