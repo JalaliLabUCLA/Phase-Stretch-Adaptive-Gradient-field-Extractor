@@ -99,7 +99,7 @@ Image_grey_double = torch.tensor(Image_orig, dtype=tfloat, device=device)
 start = timer()
 
 # Run page on input image with parameters defined in Handles
-[PAGE_output, PAGE_Kernel]=PAGE_torch(Image_grey_double,handles)
+[PAGE_output, PAGE_Kernel]=PAGE_GPU(Image_grey_double,handles)
 
 if device == "cpu":
    print("without GPU:", timer()-start)
