@@ -1,10 +1,10 @@
 Image Feautre Detection Using the Phase-Stretch Adaptive Gradient-field Extractor
 ---------------------------------------------------------------------------------
-Implementation of Phase-stretch Adaptive Gradient-Field Extractor (PAGE) in Python
+Implementation of Phase-stretch Adaptive Gradient-field Extractor (PAGE) in Python
 @contributors: Madhuri Suthar, Callen MacPhee, Yiming Zhou, Dale Capewell, Jalali Lab, Department of Electrical and
 Computer Engineering,  UCLA 
 
-Please find more information within the corresponding manuscript http://arxiv.org/abs/2202.03570 [1] and the Wiki page "INSERT WIKI LINK HERE". 
+Please find more information within the corresponding manuscript http://arxiv.org/abs/2202.03570 [1] and the Wiki page https://en.wikipedia.org/wiki/Phase-stretch Adaptive Gradient-field Extractor. 
 
 ![sunflower](https://user-images.githubusercontent.com/16159544/153650725-6e472072-4e9a-44cf-a599-02f04c0c8f31.jpeg)
 _Phase-Stretch Adaptive Gradient-Field Extractor (PAGE) performed on an X-Ray of a Sunflower. The colors represent the orientation (angle) of the edge._
