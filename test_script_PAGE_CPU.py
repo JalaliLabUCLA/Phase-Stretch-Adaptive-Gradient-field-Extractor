@@ -91,13 +91,11 @@ handles = Handles(mu_1, mu_2, sigma_1, sigma_2, S1, S1, Direction_bins, sigma_LP
 
 # Convert image datatype to double for calculations
 Image_grey_double = np.double(Image_orig);
-# Run page on input image with parameters defined in Handles
 
+# Run page on input image with parameters defined in Handles and time it 
 start = timer()
-
 [PAGE_output, PAGE_Kernel]=PAGE_CPU(Image_grey_double,handles);
-
-print("without GPU:", timer()-start)
+print("Computation time on CPU:", timer()-start)
 
 # Create a weighted color image of PAGE output to visualize directionality of edges
 visualize_PAGE(PAGE_output, Image_grey_double, handles)
