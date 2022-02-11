@@ -35,16 +35,27 @@ repeated for each color channel of a color image.
 Parameters
 ----------
 mu_1            # Center frequency of a normal/Gaussian distributed passband filter Phi_1
+
 mu_2            # Center frequency of log-normal distributed distributed passband filter Phi_2
+
 sigma_1         # Standard deviation sigma of normal/Gaussian distributed passband filter Phi_1
+
 sigma_2         # Standard deviation sigma of log-normal distributed passband filter Phi_2
+
 S1              # Strength (Amplitude) of Phi_1 filter
+
 S2              # Strength (Amplitude) of Phi_2 filter
+
 Direction_bins  # Number of directional bins i.e. number of PAGE filter channels
+
 sigma_LPF       # Standard deviation sigma of Gaussian distribution for smoothening kernel
+
 Thresh_min      # Lower bound of bi-level (bipolar) feature thresholding for morphological operations
+
 Thresh_max      # Upper bound of bi-level (bipolar) feature thresholding for morphological operations
+
 Morph_flag      # Flag to choose (0) analog edge output or (1) binary edge output
+
 See class Handles for parameter information.
 
 Citations
