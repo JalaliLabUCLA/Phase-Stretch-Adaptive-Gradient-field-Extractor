@@ -16,6 +16,7 @@ birefringence and frequency channelized diffractive propagation. The final step 
 morphological operations on the generated feature vectors in spatial domain to produce the final output. The PAGE output
 embeds the original image into a set of feature maps that select semantic information at different scale, orientation,
 and spatial frequency. These feature maps include spacial frequency bins and edge angle bins.
+
 The spectral phase operator is expressed as a product of two phase functions, ϕ_1 and ϕ_2. The first component ϕ_1 is a
 symmetric gaussian filter that selects the spatial frequency range of the edges that are detected. Default center
 frequency is 0, which indicates a baseband filter, the center frequency and bandwidth of which can be changed to probe
@@ -60,7 +61,7 @@ def cart2pol(x, y):
     return (theta, rho)
 
 
-def PAGE(I,handles):
+def PAGE_CPU(I,handles):
     # Define two dimensional cartesian (rectangular) vectors, X and Y
     Image_orig_size=I.shape
     L=0.5
