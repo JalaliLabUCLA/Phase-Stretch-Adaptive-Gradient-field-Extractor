@@ -6,6 +6,8 @@ Computer Engineering,  UCLA
 
 Please find more information within the corresponding manuscript http://arxiv.org/abs/2202.03570 [1] and the Wiki page "INSERT WIKI LINK HERE". 
 
+![sunflower](https://user-images.githubusercontent.com/16159544/153650725-6e472072-4e9a-44cf-a599-02f04c0c8f31.jpeg)
+
 PAGE or Phase-stretch Adaptive Gradient-field Extractor is a physics-inspired algorithm for
 detecting edges and their orientations in digital images at various scales. The algorithm is based on the diffraction
 equations of optics. It builds upon the Phase Stretch Transfrom algorithm [2].
@@ -31,6 +33,8 @@ introduced in [1], and it only includes one spatial frequency bin with a presele
 bandwidth, sigma. It outputs a collection of angle dependent edges, each corresponding to one angle bin. For an N x M
 dimensional input, the output will be of size N x M x D, where D is the number of directional bins. This could be
 repeated for each color channel of a color image.
+
+![rose](https://user-images.githubusercontent.com/16159544/153651040-d32ac65c-8fc8-444f-a04c-3c641bf64bfd.gif)
 
 Citations
 ---------
