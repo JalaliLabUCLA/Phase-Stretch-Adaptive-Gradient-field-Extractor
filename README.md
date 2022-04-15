@@ -4,7 +4,7 @@ Implementation of Phase-stretch Adaptive Gradient-field Extractor (PAGE) in Pyth
 @contributors: Madhuri Suthar, Callen MacPhee, Yiming Zhou, Dale Capewell, Jalali Lab, Department of Electrical and
 Computer Engineering,  UCLA 
 
-Please find more information within the corresponding manuscript http://arxiv.org/abs/2202.03570 [1] and the Wiki page https://en.wikipedia.org/wiki/Phase-stretch Adaptive Gradient-field Extractor. 
+Please find more information within the corresponding manuscript http://arxiv.org/abs/2202.03570 [1] and the Wiki page https://en.wikipedia.org/wiki/Phase-stretch_Adaptive_Gradient-field_Extractor. 
 
 ![sunflower](https://user-images.githubusercontent.com/16159544/153650725-6e472072-4e9a-44cf-a599-02f04c0c8f31.jpeg)
 _Phase-Stretch Adaptive Gradient-Field Extractor (PAGE) performed on an X-Ray of a Sunflower. The colors represent the orientation (angle) of the edge._
